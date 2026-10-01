@@ -1103,6 +1103,7 @@ export class GoalService {
         graph.goal.config?.supervisorState,
       ),
       new GoalManagerService(this.db, this.userId, this.workspaceId).usage(
+        graph.goal.id,
         graph.goal.config?.managerState,
       ),
     ]);
